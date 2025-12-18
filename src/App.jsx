@@ -1,5 +1,6 @@
 import './App.css'
 import Header from './components/Header'
+import Footer from './components/Footer';
 import { Outlet } from 'react-router-dom'
 import { useEffect, useState } from 'react';
 
@@ -37,6 +38,7 @@ function App() {
     <div className='App'>
       <Header setActiveUser={setActiveUser}></Header>
       <Outlet context={{data, setData, setActiveUser}}></Outlet>
+      <Footer></Footer>
     </div>
   )
 }

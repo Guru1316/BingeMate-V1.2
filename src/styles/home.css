@@ -119,3 +119,38 @@
     color: red;
     font-weight: bold;
 }
+
+.footer {
+    margin-top: 60px;
+    padding: 30px 0;
+    border-top: 3px solid red;
+    background-color: rgb(15, 15, 15);
+}
+
+.footer-content {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    color: #aaa;
+}
+
+.footer-title {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.footer-text {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.footer-contact p {
+    margin: 4px 0;
+    font-size: 13px;
+}
+
+.footer-copy {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+}
