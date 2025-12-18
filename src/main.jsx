@@ -14,6 +14,7 @@ import Login from './pages/LoginPage.jsx';
 import Register from './pages/RegisterPage.jsx';
 import SeriesForm from './pages/SeriesForm.jsx';
 import ProtectedRoutes from './pages/ProtectedRoutes.jsx';
+import AboutPage from './pages/AboutPage.jsx';
 
 // eslint-disable-next-line react-refresh/only-export-components
 const LoginRoute = () => {
@@ -28,6 +29,10 @@ const routerVariables = createHashRouter([{
     {
       path:"/home",
       element: <Home></Home>,
+    },
+    {
+      path:"/about",
+      element: <AboutPage></AboutPage>
     },
     {
       path:"/episode",

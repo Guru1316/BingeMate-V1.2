@@ -34,6 +34,7 @@ const Header = ({ setActiveUser }) => {
                     {auth === "true" && (
                         <>
                             <NavLink to={"/home"}>Home</NavLink>
+                            <NavLink to={"/about"}>About</NavLink>
                             <NavLink to={"/diary"}>Diary</NavLink>
                             <NavLink to={"/addSeries"}>Add Series</NavLink>
                             {/* <NavLink to={"/reviews"}>Reviews</NavLink> */}
