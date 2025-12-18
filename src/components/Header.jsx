@@ -14,12 +14,9 @@ const Header = ({ setActiveUser }) => {
     }
 
     const titleHandler = () => {
-        if(auth === "true")
-        {
-            return(
-                navigate("/home")
-            )
-        }
+        return(
+            navigate("/")
+        )
     }
 
     return (
