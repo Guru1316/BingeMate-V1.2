@@ -5,10 +5,20 @@ const AboutPage = () => {
         <div className="home">
 
             <section className="hero">
-                <h1 className="hero-title">🎬 BingeMate</h1>
-                <p>Personal Series Tracker & Review App</p>
-                <p>Track, review, and remember everything you watch.</p>
-                <p>A Letterboxd-like experience for TV series.</p>
+                <div className="hero-left">
+                    <img
+                        src={`${import.meta.env.BASE_URL}image.png`}
+                        alt="BingeMate Logo"
+                        className="hero-logo"
+                    />
+                    <h1 className="hero-title">Binge <span className='mate'>Mate</span></h1>
+                </div>
+
+                <div className="hero-right">
+                    <p>Your personal series companion.</p>
+                    <p>Track what you watch.</p>
+                    <p>Build your own binge diary.</p>
+                </div>
             </section>
 
             <h1 className="section-title">About the Project</h1>
@@ -75,7 +85,7 @@ const AboutPage = () => {
             <h1 className="section-title">Author</h1>
 
             <div className="about-box">
-                <p><strong>Guru Prasad</strong></p>
+                <p><strong className='highlight'>Guruprasad</strong></p>
                 <p>GitHub: @Guru1316</p>
                 <p>Built during my MERN Stack Internship</p>
             </div>
