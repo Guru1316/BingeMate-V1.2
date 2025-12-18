@@ -10,7 +10,6 @@ function App() {
   const [activeUser, setActiveUser] = useState(localStorage.getItem("activeUser"));
 
   useEffect(() => {
-    if (!activeUser) return;
     const fetchSeriesData = async() => {
       const localData = localStorage.getItem(`mySeriesData_${activeUser}`);
       if (localData) 

@@ -32,7 +32,7 @@ const Register = () => {
         
         localStorage.setItem("users", JSON.stringify(updatedUsers));
         alert("Registration Successful! Please Login.");
-        navigate("/");
+        navigate("/login");
     };
     return(
         <div className="login">
@@ -43,7 +43,7 @@ const Register = () => {
                 <label>Password</label>
                 <input type="password" placeholder="Enter Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
                 <button className="loginButton" type="submit">Register</button>
-                <Link to={'/'} className="register">Already Have An Account? Login</Link>
+                <Link to={'/login'} className="register">Already Have An Account? Login</Link>
             </form>
         </div>
     )

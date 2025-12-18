@@ -17,7 +17,7 @@ const Login = () => {
         localStorage.setItem("activeUser", validUser.email);
         setActiveUser(validUser.email);
         alert("Login Successful!");
-        navigate("/home");
+        navigate("/");
       }
       else 
       {

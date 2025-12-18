@@ -30,11 +30,11 @@ const Header = ({ setActiveUser }) => {
                 <h1 className='name' onClick={titleHandler}>Binge <span className='mate'>Mate</span></h1>
                 </div>
                 <div className='links'>
-
+                    <NavLink to={"/"}>Home</NavLink>
+                    <NavLink to={"/about"}>About</NavLink>
+                    <NavLink to={"/publicreviews"}>Reviews</NavLink>
                     {auth === "true" && (
                         <>
-                            <NavLink to={"/home"}>Home</NavLink>
-                            <NavLink to={"/about"}>About</NavLink>
                             <NavLink to={"/diary"}>Diary</NavLink>
                             <NavLink to={"/addSeries"}>Add Series</NavLink>
                             {/* <NavLink to={"/reviews"}>Reviews</NavLink> */}
@@ -46,7 +46,7 @@ const Header = ({ setActiveUser }) => {
                         <a onClick={handleLogout} style={{ cursor: "pointer" }}>Logout</a>
                     ) : (
                     <>
-                        <NavLink to={"/"}>Login</NavLink>
+                        <NavLink to={"/login"}>Login</NavLink>
                         <NavLink to={"/register"}>Register</NavLink>
                     </>
                     )}

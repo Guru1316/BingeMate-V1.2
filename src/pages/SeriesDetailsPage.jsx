@@ -21,9 +21,24 @@ const Series = () => {
         )   
     }
 
+    const checkLogin = (activeUser) => {
+        if (!activeUser) {
+            alert("Please login first!");
+            return false;
+        }
+        return true;
+    };
+
+    const handleLog = () => {
+        const activeUser = localStorage.getItem("activeUser");
+        if (!checkLogin(activeUser)) return;
+        navigate(`/reviews/${seriesData.id}`);
+    };
+
     const addToWatchlist = () => 
     {
         const activeUser = localStorage.getItem("activeUser");
+        if (!checkLogin(activeUser)) return;
         const key = `myWatchlist_${activeUser}`;
         const existingWatchlist = JSON.parse(localStorage.getItem(key)) || [];
         const isPresent = existingWatchlist.find(item => item.id === seriesData.id);
@@ -76,7 +91,7 @@ const Series = () => {
                 </div>
                 <div className="action-buttons">
                     <button onClick={addToWatchlist} className="btn watchlist-btn">+ Watchlist</button>
-                    <button className="btn log-btn" onClick={() => navigate(`/reviews/${seriesData.id}`)}>+ Log</button>
+                    <button className="btn log-btn" onClick={handleLog}>+ Log</button>
                 </div>
             </div>
         </div>

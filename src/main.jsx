@@ -15,6 +15,7 @@ import Register from './pages/RegisterPage.jsx';
 import SeriesForm from './pages/SeriesForm.jsx';
 import ProtectedRoutes from './pages/ProtectedRoutes.jsx';
 import AboutPage from './pages/AboutPage.jsx';
+import PublicReviews from './pages/PublicReviewsPage.jsx';
 
 // eslint-disable-next-line react-refresh/only-export-components
 const LoginRoute = () => {
@@ -27,12 +28,16 @@ const routerVariables = createHashRouter([{
   element:<App/>,
   children:[
     {
-      path:"/home",
+      path:"/",
       element: <Home></Home>,
     },
     {
       path:"/about",
       element: <AboutPage></AboutPage>
+    },
+    {
+      path:"/publicreviews",
+      element: <PublicReviews></PublicReviews>
     },
     {
       path:"/episode",
@@ -47,7 +52,7 @@ const routerVariables = createHashRouter([{
       element: <ProtectedRoutes> <SeriesForm></SeriesForm> </ProtectedRoutes> ,
     },
     {
-      path:"/",
+      path:"/login",
       element: <LoginRoute></LoginRoute>,
     },
     {
