@@ -96,7 +96,7 @@ This project is configured for deployment on **GitHub Pages**.
 
 ## 👤 Author
 
-**Guru Prasad**
+**GuruPrasad**
 * GitHub: [@Guru1316](https://github.com/Guru1316)
 * LinkedIn: [Guruprasad](https://www.linkedin.com/in/guruprasad-k-713994314/)
 

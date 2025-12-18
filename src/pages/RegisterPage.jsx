@@ -24,7 +24,7 @@ const Register = () => {
         const userExists = existingUsers.find(user => user.email === email);
         if(userExists) {
             alert("User already exists!");
-            navigate("/");
+            navigate("/login");
             return;
         }
         const newUser = { email, password };
